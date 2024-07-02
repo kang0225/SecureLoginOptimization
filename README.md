@@ -1,4 +1,4 @@
-![image](https://github.com/kang0225/SecureLoginOptimization/assets/174314912/075ca8ef-04dc-4dc3-a066-f23560a130e8)# **실제 웹사이트에서 이루어지는 로그인 성능 및 보안 개선 프로젝트**
+# **실제 웹사이트에서 이루어지는 로그인 성능 및 보안 개선 프로젝트**
 
 ---
 
