@@ -150,17 +150,26 @@ async def login(conn, username, password):
 
 ## **분석**
 
-![회원가입](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fy4MOc%2FbtsIjLsybjm%2F0Nz6kvLKhtKCPP4EnPhkWk%2Fimg.png)
+<div align="center">
+  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fy4MOc%2FbtsIjLsybjm%2F0Nz6kvLKhtKCPP4EnPhkWk%2Fimg.png" alt="회원가입">
+</div>
+
 <그림 1> 처럼 root라는 아이디로 회원가입을 했습니다. 비밀번호는 getpass 라이브러리를 통해 보이지 않도록 구현했습니다.
 
 ---
 
-![데이터베이스 저장](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FylQxt%2FbtsIiVPYYWH%2F2yhYgJBeZ3E9Pzlw2PuUnk%2Fimg.png)
+<div align="center">
+  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FylQxt%2FbtsIiVPYYWH%2F2yhYgJBeZ3E9Pzlw2PuUnk%2Fimg.png" alt="데이터베이스 저장">
+</div>
+
 <그림 2. 데이터베이스 저장> 데이터베이스 login_db에 root 사용자 이름과 해시된 비밀번호가 잘 저장되어있는 것을 볼 수 있습니다.
 
 ---
 
-![SQL 인젝션 방지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkD7up%2FbtsIicdG18V%2FBaf55o96G3l9SHiBhVK681%2Fimg.png)
+<div align="center">
+  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkD7up%2FbtsIicdG18V%2FBaf55o96G3l9SHiBhVK681%2Fimg.png" alt="SQL 인젝션 방지">
+</div>
+
 <그림 3. SQL 인젝션 방지> **SQL 인젝션**을 성공적으로 방지하고 있는 것을 볼 수 있습니다.
 
  실제 웹 사이트에는 트래픽이 어느 순간에 급증할 수도 있고, 개인정보가 유출될 가능성이 존재하기 때문에, 로그인 기능에서 가장 중요히 생각하는 요소는 효율성과 안전성일 수 밖에 없습니다. SQL 인젝션과 비동기적 처리 함수 이용은 필연적입니다.
